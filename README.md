@@ -4,7 +4,6 @@
 
 Peternakan Ayam dan Menjual Pakan Ternak.
 
-Cara menggunakan logo di HTML:
 
 <!-- Menyisipkan logo -->
 <img src="assets/logo.svg" alt="Logo DAMAR Poultry Shop" width="320">
