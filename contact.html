@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kontak — DAMAR Poultry Shop</title>
+  <meta name="description" content="Hubungi DAMAR Poultry Shop untuk pemesanan atau pertanyaan.">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/scripts.js"></script>
+</head>
+<body>
+  <header class="site-header container header-inner">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="Logo"></a>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="products.html">Produk</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container contact-main">
+    <h1>Hubungi Kami</h1>
+    <p>Isi formulir di bawah atau hubungi melalui telepon/WhatsApp jika ingin pemesanan cepat.</p>
+
+    <form class="contact-form" action="#" method="post" onsubmit="alert('Form demo — tambahkan backend untuk menangani pengiriman.'); return false;">
+      <label>
+        Nama
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Pesan
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button class="btn" type="submit">Kirim</button>
+    </form>
+
+    <section class="contact-info">
+      <h2>Alamat & Kontak</h2>
+      <p>Contoh: Jalan Peternak No.1, Kabupaten — Telepon / WA: 08xx-xxxx-xxxx</p>
+    </section>
+  </main>
+
+  <footer class="site-footer container footer-inner">
+    <small>© <span id="year3"></span> DAMAR Poultry Shop</small>
+  </footer>
+</body>
+</html>

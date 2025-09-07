@@ -1,0 +1,79 @@
+/* Simple responsive stylesheet for DAMAR Poultry Shop */
+:root{
+  --brand:#0B6E4F;
+  --accent:#F2A65A;
+  --bg:#ffffff;
+  --muted:#6b7280;
+  --radius:10px;
+  --container:1100px;
+  --max-width:1100px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  color:#111827;
+  background:var(--bg);
+  line-height:1.45;
+}
+
+.container{max-width:var(--container);margin:0 auto;padding:1rem}
+
+/* Header */
+.site-header{
+  border-bottom:1px solid #e6e6e6;
+  background:linear-gradient(180deg, #fff, #fbfbfb);
+}
+.header-inner{display:flex;align-items:center;gap:1rem;justify-content:space-between}
+.brand{display:flex;align-items:center}
+.logo{height:52px;width:auto}
+
+/* Navigation */
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
+.nav a{color:inherit;text-decoration:none;padding:.5rem .25rem;border-radius:6px}
+.nav a:hover{background:#f3f4f6}
+
+/* Menu toggle (mobile) */
+.menu-toggle{display:none;background:none;border:0;font-size:1.25rem}
+
+/* Hero */
+.hero{padding:3rem 0;background:linear-gradient(180deg, rgba(11,110,79,0.05), transparent)}
+.hero-inner{text-align:center}
+.hero h1{margin:0 0 .5rem;font-size:2rem}
+.btn{display:inline-block;background:var(--brand);color:#fff;padding:.6rem 1rem;border-radius:8px;text-decoration:none}
+.btn.ghost{background:transparent;border:1px solid var(--brand);color:var(--brand)}
+
+/* Features */
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin:2rem 0}
+.feature{background:#fff;padding:1rem;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.04)}
+
+/* Products */
+.products h2{margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.card{background:#fff;border-radius:12px;padding:0;overflow:hidden;box-shadow:0 10px 25px rgba(16,24,40,0.04)}
+.card img{width:100%;height:150px;object-fit:cover;display:block}
+.card h3{margin:.75rem .75rem 0}
+.card p{margin:.5rem .75rem;padding-bottom:.75rem;color:var(--muted)}
+.price{color:var(--brand);font-weight:600;margin:.5rem .75rem}
+
+/* Footer */
+.site-footer{border-top:1px solid #eee;padding:1rem 0;margin-top:2rem}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+
+/* Contact form */
+.contact-form{max-width:720px;display:grid;gap:.75rem}
+.contact-form label{display:block}
+.contact-form input,.contact-form textarea{width:100%;padding:.5rem;border:1px solid #e5e7eb;border-radius:8px}
+
+/* Utilities */
+@media (max-width:800px){
+  .nav{display:none}
+  .menu-toggle{display:inline-block}
+  .header-inner{align-items:center}
+  .hero h1{font-size:1.6rem}
+  .logo{height:44px}
+  .footer-inner{flex-direction:column;align-items:flex-start}
+  .container{padding:0.75rem}
+}

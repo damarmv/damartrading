@@ -1,260 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Damar Poultry Shop</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    /* Global Styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
-      color: #333;
-      background-color: #fdfdfd;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    /* Navbar */
-    header {
-      background: #ffffffcc;
-      backdrop-filter: blur(10px);
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 40px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    header h1 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #004aad;
-    }
-    nav a {
-      margin-left: 25px;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #ff6600;
-    }
-
-    /* Hero Section */
-    .hero {
-      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-        url("https://i.ibb.co/W2JdHgD/chicken-farm.jpg") no-repeat center/cover;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      padding: 0 20px;
-    }
-    .hero h2 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-    }
-    .btn {
-      background: #ff6600;
-      color: white;
-      padding: 12px 28px;
-      border-radius: 30px;
-      font-weight: 600;
-      transition: 0.3s;
-      display: inline-block;
-    }
-    .btn:hover {
-      background: #e05500;
-    }
-
-    /* Sections */
-    section {
-      padding: 80px 10%;
-      text-align: center;
-    }
-    section h2 {
-      font-size: 2.2rem;
-      color: #004aad;
-      margin-bottom: 20px;
-    }
-    section p {
-      max-width: 800px;
-      margin: 0 auto 40px;
-      color: #555;
-      line-height: 1.6;
-    }
-
-    /* Produk Grid */
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 30px;
-    }
-    .product {
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-    .product:hover {
-      transform: translateY(-8px);
-    }
-    .product img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-    .product h3 {
-      margin: 15px 0 5px;
-      font-size: 1.3rem;
-      color: #004aad;
-    }
-    .product p {
-      padding: 0 15px 20px;
-      font-size: 0.95rem;
-      color: #666;
-    }
-
-    /* Contact */
-    .contact-info {
-      font-size: 1.1rem;
-      line-height: 1.8;
-    }
-    .contact-info a {
-      color: #ff6600;
-      font-weight: 600;
-    }
-    .whatsapp-btn {
-      background: #25D366; /* hijau khas WhatsApp */
-      color: white;
-      padding: 12px 28px;
-      border-radius: 30px;
-      font-weight: 600;
-      transition: 0.3s;
-      display: inline-block;
-      margin-top: 20px;
-    }
-    .whatsapp-btn:hover {
-      background: #1ebe57;
-    }
-
-    /* Footer */
-    footer {
-      background: #004aad;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-      }
-      nav {
-        margin-top: 10px;
-      }
-      .hero h2 {
-        font-size: 2.2rem;
-      }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DAMAR Poultry Shop — Peternakan & Pakan Ternak</title>
+  <meta name="description" content="DAMAR Poultry Shop — Peternakan ayam dan penyedia pakan ternak berkualitas. Kontak, produk, dan layanan.">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+  <link rel="icon" type="image/svg+xml" href="assets/logo-icon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#0B6E4F">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/scripts.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "DAMAR Poultry Shop",
+    "description": "Peternakan ayam dan penyedia pakan ternak.",
+    "url": "https://your-site.example",
+    "logo": "https://your-site.example/assets/logo-icon.svg"
+  }
+  </script>
 </head>
 <body>
-
-  <!-- Navbar -->
-  <header>
-    <h1>Damar Poultry Shop</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">Tentang Kami</a>
-      <a href="#products">Produk</a>
-      <a href="#contact">Kontak</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.svg" alt="Logo DAMAR Poultry Shop" class="logo">
+      </a>
+      <button id="menuToggle" aria-controls="mainNav" aria-expanded="false" class="menu-toggle" aria-label="Buka menu">
+        ☰
+      </button>
+      <nav id="mainNav" class="nav">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="products.html">Produk</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <div>
-      <h2>Solusi Peternakan Unggas Modern</h2>
-      <p>Pakan, DOC, Vitamin & Peralatan Berkualitas dalam Satu Tempat</p>
-      <a href="#contact" class="btn">Hubungi Kami</a>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about">
-    <h2>Tentang Kami</h2>
-    <p>Damar Poultry Shop hadir sebagai mitra terpercaya peternak unggas. 
-    Kami menyediakan berbagai kebutuhan peternakan mulai dari pakan ayam, DOC (Day Old Chick), 
-    vitamin, hingga peralatan dengan kualitas terjamin. 
-    Dengan pengalaman dan komitmen, kami selalu berusaha memberikan layanan terbaik untuk mendukung sukses usaha peternak.</p>
-  </section>
-
-  <!-- Produk -->
-  <section id="products">
-    <h2>Produk Kami</h2>
-    <div class="products">
-      <div class="product">
-        <img src="https://i.ibb.co/zxMt9pX/chicken-feed.jpg" alt="Pakan Ayam">
-        <h3>Pakan Ayam</h3>
-        <p>Pakan starter, grower, dan finisher dengan nutrisi seimbang untuk performa optimal.</p>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>DAMAR Poultry Shop</h1>
+        <p>Peternakan ayam & penyedia pakan ternak berkualitas. Siap melayani kebutuhan skala kecil sampai besar.</p>
+        <p><a class="btn" href="products.html">Lihat Produk</a> <a class="btn ghost" href="contact.html">Hubungi Kami</a></p>
       </div>
-      <div class="product">
-        <img src="https://i.ibb.co/5cHRRzM/doc-chick.jpg" alt="DOC">
-        <h3>DOC (Day Old Chick)</h3>
-        <p>Anak ayam sehat, berkualitas tinggi, dan siap tumbuh dengan baik di peternakan.</p>
+    </section>
+
+    <section class="features container" aria-label="Keunggulan">
+      <article class="feature">
+        <h3>Ayam Sehat</h3>
+        <p>Perawatan dan pakan terstandar untuk memastikan kualitas daging dan telur.</p>
+      </article>
+      <article class="feature">
+        <h3>Pakan Berkualitas</h3>
+        <p>Campuran pakan bergizi untuk pertumbuhan optimal dan kesehatan ternak.</p>
+      </article>
+      <article class="feature">
+        <h3>Pengiriman</h3>
+        <p>Pengiriman regional dengan kemasan aman dan terjadwal.</p>
+      </article>
+    </section>
+
+    <section class="products container" id="products" aria-label="Contoh produk">
+      <h2>Produk Unggulan</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="assets/sample-chicken.jpg" alt="Ayam ras unggul">
+          <h3>Ayam Ras Unggul</h3>
+          <p class="price">Rp 40.000 / ekor</p>
+          <p>Ayam sehat siap potong — pemeliharaan bersertifikat kebersihan.</p>
+        </article>
+        <article class="card">
+          <img src="assets/sample-feed.jpg" alt="Pakan ternak berkualitas">
+          <h3>Pakan Ayam 25kg</h3>
+          <p class="price">Rp 120.000 / karung</p>
+          <p>Komposisi seimbang untuk fase pertumbuhan.</p>
+        </article>
+        <article class="card">
+          <img src="assets/sample-layers.jpg" alt="Ayam petelur">
+          <h3>Ayam Petelur</h3>
+          <p class="price">Rp 55.000 / ekor</p>
+          <p>Produktivitas telur terjaga dengan manajemen pakan tepat.</p>
+        </article>
       </div>
-      <div class="product">
-        <img src="https://i.ibb.co/72qtY3N/vitamin.jpg" alt="Vitamin">
-        <h3>Vitamin & Suplemen</h3>
-        <p>Menunjang daya tahan tubuh & mempercepat pertumbuhan unggas secara alami.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>DAMAR Poultry Shop</strong>
+        <p>Peternakan & Pakan Ternak — Kontak: <a href="contact.html">Halaman Kontak</a></p>
+      </div>
+      <div>
+        <small>© <span id="year"></span> DAMAR Poultry Shop</small>
       </div>
     </div>
-  </section>
-
-  <!-- Kontak -->
-  <section id="contact">
-    <h2>Kontak Kami</h2>
-    <div class="contact-info">
-    <p>📍 Alamat: 
-      <a href="https://www.google.com/maps/place/Damar+Trading,+Jalan+Batu+Nan+Limo+Lubuk+Batingkok,+Koto+Tangah+Simalanggang,+Kec.+Payakumbuh,+Kabupaten+Lima+Puluh+Kota,+Sumatera+Barat+26251/@-0.1800234,100.6093996,16z/data=!4m6!3m5!1s0x2fd54d28b06e2455:0x75888fabd02edf2!8m2!3d-0.1800234!4d100.6093996!16s%2Fg%2F11c3k2_b83?g_ep=Eg1tbF8yMDI1MDkwM18wIJvbDyoASAJQAg%3D%3D" target="_blank">
-        Jl. Batu Nan Limo Lubuk Batingkok, Koto Tangah Simalanggang, Kec. Payakumbuh, Kabupaten Lima Puluh Kota, Sumatera Barat, 26251
-      </a>
-    </p>
-      <p>📞 WhatsApp: +62 851-9000-1400</p>
-      <p>📧 Email: 
-  <a href="mailto:damarmuvid9@gmail.com">
-    damarmuvid9@gmail.com
-  </a>
-</p>
-      <a href="https://wa.me/6285190001400" target="_blank" class="whatsapp-btn">
-        Chat via WhatsApp
-      </a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Damar Poultry Shop. All Rights Reserved.</p>
   </footer>
-
 </body>
 </html>
