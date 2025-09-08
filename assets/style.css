@@ -15,6 +15,7 @@ header .container {
   align-items: center;
   width: 90%;
   margin: auto;
+}
   header .topbar {
   background-color: #000;      /* Latar hitam */
   display: flex;               
@@ -35,7 +36,6 @@ header .topbar .boxed-text {
   box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Bayangan halus */
 }
 
-}
 header nav a {
   color: #fff;
   margin-left: 20px;
