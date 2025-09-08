@@ -15,15 +15,12 @@ header .container {
   align-items: center;
   width: 90%;
   margin: auto;
-}
   header .topbar {
   background-color: #000;      /* Latar hitam */
   display: flex;               
   justify-content: center;     /* Tengah horizontal */
   align-items: center;         /* Tengah vertical */
   height: 80px;                /* Tinggi header */
-}
-
 header .topbar .boxed-text {
   background-color: #fff;      /* Box putih */
   color: #000;                 /* Teks hitam */
@@ -34,6 +31,8 @@ header .topbar .boxed-text {
   font-weight: 600;
   letter-spacing: 1px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Bayangan halus */
+}
+  }
 }
 
 header nav a {
