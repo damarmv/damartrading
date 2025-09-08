@@ -15,36 +15,7 @@ header .container {
   align-items: center;
   width: 90%;
   margin: auto;
-  header .topbar {
-  background-color: #000;      /* Latar hitam */
-  display: flex;               
-  justify-content: center;     /* Tengah horizontal */
-  align-items: center;         /* Tengah vertical */
-  height: 80px;                /* Tinggi header */
-
-.header-container {
-  display: flex;
-  justify-content: center;      /* Tengah horizontal */
-  align-items: center;          /* Tengah vertical -> sejajar */
-  gap: 15px;                    /* Jarak antara logo dan tulisan */
-}
-
-.logo {
-  height: 60px;                 /* Atur ukuran logo */
-}
-
-.boxed-text {
-  background-color: #fff;       /* Box putih */
-  color: #000;                  /* Teks hitam */
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-}
-}
+  }
 
 header nav a {
   color: #fff;
