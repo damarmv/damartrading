@@ -5,13 +5,18 @@ body {
   line-height: 1.6;
 }
 header .topbar {
-  background-color: #000;   /* Hitam */
-  color: #fff;              /* Putih */
-  text-align: center;       /* Tengah */
-  padding: 10px;            /* Spasi */
-  font-size: 18px;          /* Ukuran teks */
-  font-weight: bold;        /* Tebal */
+  background-color: #000;     /* Hitam */
+  color: #fff;                /* Putih */
+  display: flex;              /* Supaya bisa rata tengah */
+  justify-content: center;    /* Tengah horizontal */
+  align-items: center;        /* Tengah vertical */
+  height: 60px;               /* Tinggi header */
+  font-family: 'Montserrat', sans-serif; /* Font modern */
+  font-size: 22px;            /* Ukuran teks */
+  font-weight: 600;           /* Tebal */
+  letter-spacing: 1px;        /* Spasi antar huruf */
 }
+
 header {
   background: #222;
   color: #fff;
