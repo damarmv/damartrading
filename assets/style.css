@@ -4,7 +4,18 @@ body {
   padding: 0;
   line-height: 1.6;
 }
-header .topbar {
+header {
+  background: #222;
+  color: #fff;
+  padding: 15px 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  header .topbar {
   background-color: #000;      /* Latar hitam */
   display: flex;               
   justify-content: center;     /* Tengah horizontal */
@@ -24,18 +35,6 @@ header .topbar .boxed-text {
   box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Bayangan halus */
 }
 
-
-header {
-  background: #222;
-  color: #fff;
-  padding: 15px 0;
-}
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  margin: auto;
 }
 header nav a {
   color: #fff;
