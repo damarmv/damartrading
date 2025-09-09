@@ -92,9 +92,9 @@ footer {
   color: white;
   font-weight: bold;
   text-decoration: none;
-  padding: 12px 20px;
+  padding: 3px 7px;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 4px;
   transition: 0.3s;
 }
 
@@ -103,7 +103,7 @@ footer {
 }
 
 .wa-icon {
-  width: 22px;
-  height: 22px;
-  margin-right: 10px;
+  width: 5px;
+  height: 5px;
+  margin-right: 2px;
 }
