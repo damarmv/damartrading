@@ -84,3 +84,26 @@ footer {
   padding: 15px;
   font-size: 0.9rem;
 }
+/* CSS untuk tombol WhatsApp */
+.wa-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #25D366;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.wa-button:hover {
+  background-color: #1ebe57;
+}
+
+.wa-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
