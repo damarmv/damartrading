@@ -41,7 +41,7 @@ header nav a:hover {
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 20px;
-  color: white;
+  background: #f39c12;
 }
 .btn {
   background: #f39c12;
