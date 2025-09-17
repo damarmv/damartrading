@@ -1,15 +1,12 @@
 @font-face {
-  font-family: "MyFont"; /* Nama bebas untuk dipakai */
+  font-family: "Barmeno"; /* Nama bebas untuk dipakai */
   src: url("https://damartrading.web.id/font.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: "MyFont", sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
+  font-family: "Barmeno", sans-serif;
 }
 header {
   background: #222;
