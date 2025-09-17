@@ -13,7 +13,7 @@ Website resmi **Damar Trading** – penyedia telur ayam segar & pakan ternak (ko
 - `sitemap.xml` → peta situs untuk indexing
 
 ## 📞 Kontak
-- **Email:** info@damartrading.web.id (mailto:info@damartrading.web.id) 
+- **Email:** [info@damartrading.web.id](mailto:info@damartrading.web.id) 
 - **WhatsApp:** [Hubungi Kami](https://wa.me/62851900001400)  
 - **Alamat:**  
   Jalan Batu Nan Limo Lubuk Batingkok,  
