@@ -1,5 +1,4 @@
-body {
-  @font-face {
+@font-face {
   font-family: "MyFont"; /* Nama bebas untuk dipakai */
   src: url("https://damartrading.web.id/font.woff") format("woff");
   font-weight: normal;
@@ -8,8 +7,6 @@ body {
 
 body {
   font-family: "MyFont", sans-serif;
-}
-
   margin: 0;
   padding: 0;
   line-height: 1.6;
