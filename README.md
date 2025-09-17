@@ -14,7 +14,7 @@ Website resmi **Damar Trading** – penyedia telur ayam segar & pakan ternak (ko
 
 ## 📞 Kontak
 - **Email:** [info@damartrading.web.id](mailto:info@damartrading.web.id) 
-- **WhatsApp:** [085190001400](https://wa.me/62851900001400)  
+- **Telp:** [085190001400](https://wa.me/62851900001400)  
 - **Alamat:**  
   Jalan Batu Nan Limo Lubuk Batingkok,  
   Koto Tangah Simalanggang, Kec. Payakumbuh,  
