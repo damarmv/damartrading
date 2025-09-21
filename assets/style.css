@@ -18,6 +18,17 @@ header .container {
   margin: auto;
   }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-name {
+  margin-left: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 header nav a {
   color: #fff;
   margin-left: 20px;
