@@ -1,5 +1,9 @@
+@font-face {
+  font-family: 'Barmeno';
+  src: url('font.woff') format('woff');
+}
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Barmeno', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
