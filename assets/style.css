@@ -127,6 +127,38 @@ lokasi-kami {
   text-align: center;
 }
 
+.testimonials {
+  padding: 60px 20px;
+  background: #f0f0f0;
+  text-align: center;
+}
+
+.testimonials .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.testimonials .card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.testimonials .card p {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.testimonials .card h4 {
+  font-weight: bold;
+  text-align: right;
+  color: #333;
+}
+
 footer {
   background: #222;
   color: white;
