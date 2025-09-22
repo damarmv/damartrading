@@ -188,3 +188,30 @@ footer {
   font-size: 0.9rem;
   margin-top: 60px;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+  }
+
+  header nav {
+    margin-top: 15px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .client-logos {
+    gap: 20px;
+  }
+}
