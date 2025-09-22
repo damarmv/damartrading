@@ -45,12 +45,17 @@ header .container {
 
 header nav a {
   color: #fff;
-  margin-left: 20px;
+  margin-left: 10px;
   text-decoration: none;
   font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #333;
+  transition: background-color 0.3s ease;
 }
 header nav a:hover {
-  color: #f39c12;
+  background-color: #f39c12;
+  color: #fff;
 }
 .logo {
   height: 80px;
