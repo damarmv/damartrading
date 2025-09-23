@@ -6,7 +6,9 @@
 
   # Use https://search.nixos.org/packages to find packages
   packages = [
+    # We need nodejs to run the http-server
     pkgs.nodejs_20
+    # http-server is a simple, zero-configuration command-line http server.
     pkgs.nodePackages.http-server
   ];
 
@@ -18,16 +20,19 @@
       # "vscodevim.vim"
     ];
 
-    # Enable previews
+    # This section configures the web preview.
     previews = {
       enable = true;
       previews = {
+        # This defines a preview panel named "web".
         web = {
-          # This command will automatically start a web server for your static files.
-          command = ["http-server", "."];
+          # The command to run to start the web server.
+          # "http-server" will serve the current directory by default.
+          command = ["http-server"];
           manager = "web";
           env = {
-            # IDX will set the PORT environment variable for the server to use.
+            # IDX provides a $PORT environment variable.
+            # We pass this to our server so it listens on the correct port.
             PORT = "$PORT";
           };
         };
@@ -38,12 +43,12 @@
     workspace = {
       # Runs when a workspace is first created
       onCreate = {
-        # Example: install JS dependencies from NPM
-        # npm-install = "npm install";
+        # e.g. "npm install"
       };
       # Runs when the workspace is (re)started
       onStart = {
-        # The web server will be started by the 'previews' configuration above.
+        # The web server is started via the 'previews' configuration above,
+        # so we don't need to do anything here.
       };
     };
   };
