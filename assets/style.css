@@ -4,13 +4,13 @@ body {
   padding: 0;
   line-height: 1.6;
   font-weight: 400;
-  background-color: #ccd0cf;
-  color: #2a0800;
+  background-color: #c1e8ff;
+  color: #021024;
 }
 
 #top-bar {
-  background: #2a0800;
-  color: #ccd0cf;
+  background: #021024;
+  color: #c1e8ff;
   padding: 10px 0;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .contact-info a {
-  color: #ccd0cf;
+  color: #c1e8ff;
   margin-left: 20px;
   text-decoration: none;
   font-size: 0.9rem;
@@ -35,8 +35,8 @@ body {
 }
 
 #main-header {
-  background: #ccd0cf;
-  color: #2a0800;
+  background: #c1e8ff;
+  color: #021024;
   padding: 15px 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   position: sticky;
@@ -66,7 +66,7 @@ body {
   margin-left: 15px;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #2a0800;
+  color: #021024;
 }
 
 #main-nav ul {
@@ -81,7 +81,7 @@ body {
 }
 
 #main-nav a {
-  color: #2a0800;
+  color: #021024;
   text-decoration: none;
   font-weight: 500;
   position: relative;
@@ -94,7 +94,7 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: #775144;
+  background: #7da0ca;
   transition: width 0.3s;
 }
 
@@ -117,7 +117,7 @@ body {
   display: block;
   width: 25px;
   height: 3px;
-  background: #2a0800;
+  background: #021024;
   margin: 5px 0;
   transition: 0.3s;
 }
@@ -160,15 +160,16 @@ body {
 }
 
 .btn {
-  background: #775144;
-  color: #ccd0cf;
+  background: #7da0ca;
+  color: #021024;
   padding: 12px 25px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
 }
 .btn:hover {
-  background: #2a0800;
+  background: #052659;
+  color: #c1e8ff;
 }
 .about, .produk, .kontak, .gallery {
   padding: 60px 20px;
@@ -176,14 +177,14 @@ body {
 }
 
 .produk, .kontak {
-    background-color: #bea8a7;
+    background-color: #5483b3;
 }
 
 h2 {
   margin-bottom: 20px;
   font-size: 2rem;
   text-align: center;
-  color: #2a0800;
+  color: #021024;
 }
 .grid {
   display: grid;
@@ -241,7 +242,7 @@ h2 {
 .clients h2 {
   font-size: 28px;
   margin-bottom: 30px;
-  color: #2a0800;
+  color: #021024;
 }
 
 .client-logos {
@@ -278,8 +279,13 @@ lokasi-kami {
 
 .testimonials {
   padding: 60px 20px;
-  background: #c09891;
+  background: #052659;
   text-align: center;
+  color: #c1e8ff;
+}
+
+.testimonials h2 {
+    color: #c1e8ff;
 }
 
 .testimonials .grid {
@@ -290,11 +296,12 @@ lokasi-kami {
 }
 
 .testimonials .card {
-  background: #ccd0cf;
+  background: #c1e8ff;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   text-align: left;
+  color: #021024;
 }
 
 .testimonials .card p {
@@ -305,12 +312,12 @@ lokasi-kami {
 .testimonials .card h4 {
   font-weight: bold;
   text-align: right;
-  color: #2a0800;
+  color: #021024;
 }
 
 footer {
-  background: #2a0800;
-  color: #ccd0cf;
+  background: #021024;
+  color: #c1e8ff;
   text-align: center;
   padding: 15px;
   font-size: 0.9rem;
@@ -325,8 +332,8 @@ footer {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #775144;
-  color: #ccd0cf;
+  background-color: #7da0ca;
+  color: #021024;
   cursor: pointer;
   padding: 15px;
   border-radius: 10px;
@@ -334,7 +341,8 @@ footer {
 }
 
 #back-to-top:hover {
-  background-color: #2a0800;
+  background-color: #052659;
+  color: #c1e8ff;
 }
 
 .fade-in {
@@ -355,7 +363,7 @@ footer {
     position: absolute;
     top: 100%;
     left: 0;
-    background: #ccd0cf;
+    background: #c1e8ff;
     width: 100%;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
@@ -371,7 +379,7 @@ footer {
   #main-nav li {
     margin: 0;
     text-align: center;
-    border-bottom: 1px solid #bea8a7;
+    border-bottom: 1px solid #7da0ca;
   }
 
   #main-nav a {
