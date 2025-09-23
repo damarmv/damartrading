@@ -4,13 +4,13 @@ body {
   padding: 0;
   line-height: 1.6;
   font-weight: 400;
-  background-color: #eeedeb;
-  color: #3c3633;
+  background-color: #ccd0cf;
+  color: #2a0800;
 }
 
 #top-bar {
-  background: #3c3633;
-  color: #eeedeb;
+  background: #2a0800;
+  color: #ccd0cf;
   padding: 10px 0;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .contact-info a {
-  color: #eeedeb;
+  color: #ccd0cf;
   margin-left: 20px;
   text-decoration: none;
   font-size: 0.9rem;
@@ -35,8 +35,8 @@ body {
 }
 
 #main-header {
-  background: #eeedeb;
-  color: #3c3633;
+  background: #ccd0cf;
+  color: #2a0800;
   padding: 15px 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   position: sticky;
@@ -66,7 +66,7 @@ body {
   margin-left: 15px;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #3c3633;
+  color: #2a0800;
 }
 
 #main-nav ul {
@@ -81,7 +81,7 @@ body {
 }
 
 #main-nav a {
-  color: #3c3633;
+  color: #2a0800;
   text-decoration: none;
   font-weight: 500;
   position: relative;
@@ -94,7 +94,7 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: #747264;
+  background: #775144;
   transition: width 0.3s;
 }
 
@@ -117,7 +117,7 @@ body {
   display: block;
   width: 25px;
   height: 3px;
-  background: #3c3633;
+  background: #2a0800;
   margin: 5px 0;
   transition: 0.3s;
 }
@@ -160,15 +160,15 @@ body {
 }
 
 .btn {
-  background: #747264;
-  color: #eeedeb;
+  background: #775144;
+  color: #ccd0cf;
   padding: 12px 25px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
 }
 .btn:hover {
-  background: #3c3633;
+  background: #2a0800;
 }
 .about, .produk, .kontak, .gallery {
   padding: 60px 20px;
@@ -176,14 +176,14 @@ body {
 }
 
 .produk, .kontak {
-    background-color: #e0ccbe;
+    background-color: #bea8a7;
 }
 
 h2 {
   margin-bottom: 20px;
   font-size: 2rem;
   text-align: center;
-  color: #3c3633;
+  color: #2a0800;
 }
 .grid {
   display: grid;
@@ -224,7 +224,7 @@ h2 {
 }
 
 .card {
-  background: #eeedeb;
+  background: #fff;
   border-radius: 8px;
   padding: 15px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -241,7 +241,7 @@ h2 {
 .clients h2 {
   font-size: 28px;
   margin-bottom: 30px;
-  color: #3c3633;
+  color: #2a0800;
 }
 
 .client-logos {
@@ -278,7 +278,7 @@ lokasi-kami {
 
 .testimonials {
   padding: 60px 20px;
-  background: #e0ccbe;
+  background: #c09891;
   text-align: center;
 }
 
@@ -290,7 +290,7 @@ lokasi-kami {
 }
 
 .testimonials .card {
-  background: #eeedeb;
+  background: #ccd0cf;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -305,12 +305,12 @@ lokasi-kami {
 .testimonials .card h4 {
   font-weight: bold;
   text-align: right;
-  color: #3c3633;
+  color: #2a0800;
 }
 
 footer {
-  background: #3c3633;
-  color: #eeedeb;
+  background: #2a0800;
+  color: #ccd0cf;
   text-align: center;
   padding: 15px;
   font-size: 0.9rem;
@@ -325,8 +325,8 @@ footer {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #747264;
-  color: #eeedeb;
+  background-color: #775144;
+  color: #ccd0cf;
   cursor: pointer;
   padding: 15px;
   border-radius: 10px;
@@ -334,7 +334,7 @@ footer {
 }
 
 #back-to-top:hover {
-  background-color: #3c3633;
+  background-color: #2a0800;
 }
 
 .fade-in {
@@ -355,7 +355,7 @@ footer {
     position: absolute;
     top: 100%;
     left: 0;
-    background: #eeedeb;
+    background: #ccd0cf;
     width: 100%;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
@@ -371,7 +371,7 @@ footer {
   #main-nav li {
     margin: 0;
     text-align: center;
-    border-bottom: 1px solid #e0ccbe;
+    border-bottom: 1px solid #bea8a7;
   }
 
   #main-nav a {
