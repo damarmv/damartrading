@@ -59,4 +59,19 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   });
+
+  // Mobile-specific link adjustments
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    const whatsAppLinks = document.querySelectorAll('a[href*="wa.me"]');
+    
+    whatsAppLinks.forEach(link => {
+      const phone = link.href.split('/').pop();
+      if (phone) {
+        link.href = `whatsapp://send?phone=${phone}`;
+        link.removeAttribute('target');
+      }
+    });
+  }
 });
