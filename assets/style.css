@@ -437,3 +437,18 @@ footer {
     gap: 20px;
   }
 }
+
+@media (max-width: 480px) {
+  #top-bar .container {
+    justify-content: center;
+  }
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contact-info a {
+    margin: 5px 10px;
+    font-size: 0.85rem;
+  }
+}
