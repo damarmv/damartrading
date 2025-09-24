@@ -161,15 +161,21 @@ body {
 
 .btn {
   background: #B3A18F;
-  color: #F4F1ED;
+  color: #212121;
   padding: 12px 25px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
+  border: 2px solid #B3A18F;
+  transition: background-color 0.3s, color 0.3s;
 }
+
 .btn:hover {
-  background: #4A4A4A;
+  background-color: #4A4A4A;
+  color: #F4F1ED;
+  border-color: #4A4A4A;
 }
+
 .about, .produk, .kontak, .gallery {
   padding: 60px 20px;
   text-align: center;
@@ -332,15 +338,18 @@ footer {
   border: none;
   outline: none;
   background-color: #B3A18F;
-  color: #F4F1ED;
+  color: #212121;
   cursor: pointer;
   padding: 15px;
   border-radius: 10px;
   font-size: 18px;
+  border: 2px solid #B3A18F;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 #back-to-top:hover {
   background-color: #4A4A4A;
+  color: #F4F1ED;
 }
 
 .fade-in {
