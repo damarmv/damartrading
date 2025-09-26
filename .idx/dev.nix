@@ -22,7 +22,7 @@
 
     # This section configures the web preview.
     previews = {
-      enable = true;
+      enable = false;
       previews = {
         # This defines a preview panel named "web".
         web = {
