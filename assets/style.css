@@ -160,20 +160,20 @@ body {
 }
 
 .btn {
-  background-color: #4A4A4A;
-  color: #F4F1ED;
+  background-color: #FFC107;
+  color: #FFFFFF;
   padding: 12px 25px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  border: 2px solid #4A4A4A;
+  border: 2px solid #FFC107;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .btn:hover {
-  background-color: #B3A18F;
-  color: #212121;
-  border-color: #B3A18F;
+  background-color: #e0a800;
+  color: #FFFFFF;
+  border-color: #e0a800;
 }
 
 .about, .produk, .kontak, .gallery {
@@ -344,20 +344,20 @@ footer {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #4A4A4A;
-  color: #F4F1ED;
+  background-color: #FFC107;
+  color: #FFFFFF;
   cursor: pointer;
   padding: 15px;
   border-radius: 10px;
   font-size: 18px;
-  border: 2px solid #4A4A4A;
+  border: 2px solid #FFC107;
   transition: background-color 0.3s, color 0.3s;
 }
 
 #back-to-top:hover {
-  background-color: #B3A18F;
-  color: #212121;
-  border-color: #B3A18F;
+  background-color: #e0a800;
+  color: #FFFFFF;
+  border-color: #e0a800;
 }
 
 .fade-in {
@@ -462,4 +462,5 @@ footer {
 
 .kontak a {
   color: #212121;
+  text-decoration: none;
 }
