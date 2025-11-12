@@ -28,30 +28,37 @@
     /* HEADER */
     .header {
       background: linear-gradient(135deg, #8b0000 0%, #b71c1c 100%);
-      padding: 30px 24px;
-      text-align: center;
+      padding: 24px 28px;
     }
-    .header-content {
-      display: inline-block;
-      text-align: left;
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 16px;
     }
     .header-logo {
       width: 70px;
-      vertical-align: middle;
-      margin-right: 10px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .brand-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     .brand-name {
       font-size: 26px;
       font-weight: 700;
       color: #fff;
       letter-spacing: 0.5px;
-      display: inline-block;
-      vertical-align: middle;
+      margin: 0;
+      line-height: 1.2;
     }
     .tagline {
       font-size: 13px;
       color: #ffefc3;
-      margin-top: 4px;
+      margin-top: 3px;
       letter-spacing: 0.3px;
     }
 
@@ -166,13 +173,14 @@
       line-height: 1.4;
     }
 
+    /* RESPONSIVE */
     @media (max-width:600px) {
+      .header-inner { flex-direction: column; text-align: center; }
+      .brand-name { font-size: 22px; }
       .hero { padding: 70px 18px; }
       .hero h2 { font-size: 26px; }
       .content { padding: 26px 18px; }
       .btn-primary, .btn-gold { display: block; margin: 8px auto; width: 80%; }
-      .brand-name { font-size: 22px; display: block; text-align: center; }
-      .header-content { text-align: center; }
     }
   </style>
 </head>
@@ -186,10 +194,10 @@
           <!-- HEADER -->
           <tr>
             <td class="header">
-              <div class="header-content">
+              <div class="header-inner">
                 <img src="assets/backburger.png" alt="BackBurger Logo" class="header-logo">
-                <div style="display:inline-block; vertical-align:middle;">
-                  <div class="brand-name">BackBurger</div>
+                <div class="brand-block">
+                  <h1 class="brand-name">BackBurger</h1>
                   <div class="tagline">The one you’ll always come back for.</div>
                 </div>
               </div>
