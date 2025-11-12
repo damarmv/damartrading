@@ -127,3 +127,17 @@ footer {
     background: #333;
     color: #fff;
 }
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
