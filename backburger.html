@@ -21,7 +21,6 @@
       background-color: #ffffff;
       border-radius: 16px;
       overflow: hidden;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     }
 
     /* HEADER */
@@ -29,22 +28,11 @@
       background: linear-gradient(135deg, #8b0000 0%, #b71c1c 100%);
       padding: 24px 28px;
     }
-    .header-inner {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 16px;
-    }
     .header-logo {
       width: 70px;
       height: 70px;
       border-radius: 50%;
       object-fit: cover;
-    }
-    .brand-block {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
     }
     .brand-name {
       font-size: 26px;
@@ -145,10 +133,26 @@
 
     /* RESPONSIVE */
     @media (max-width:600px) {
-      .header-inner { flex-direction: column; text-align: center; }
-      .brand-name { font-size: 22px; }
+      .container { 
+        width: 100% !important; 
+        margin: 0 !important; 
+        border-radius: 0 !important; 
+      }
       .content { padding: 26px 18px; }
       .btn-primary, .btn-gold { display: block; margin: 8px auto; width: 80%; }
+      .header-logo-container { 
+        display: block !important; 
+        text-align: center !important; 
+        width: 100% !important; 
+        padding-right: 0 !important; 
+        padding-bottom: 15px !important; 
+      }
+      .brand-block-container { 
+        display: block !important; 
+        text-align: center !important; 
+        width: 100% !important; 
+      }
+      .brand-name { font-size: 24px !important; }
     }
   </style>
 </head>
@@ -162,13 +166,17 @@
           <!-- HEADER -->
           <tr>
             <td class="header">
-              <div class="header-inner">
-                <img src="assets/backburger.png" alt="BackBurger Logo" class="header-logo">
-                <div class="brand-block">
-                  <h1 class="brand-name">BackBurger</h1>
-                  <div class="tagline">The one you’ll always come back for.</div>
-                </div>
-              </div>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="header-logo-container" style="padding-right: 16px;" valign="middle" width="86">
+                    <img src="assets/backburger.png" alt="BackBurger Logo" class="header-logo">
+                  </td>
+                  <td class="brand-block-container" valign="middle">
+                    <h1 class="brand-name">BackBurger</h1>
+                    <div class="tagline">The one you’ll always come back for.</div>
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
 
