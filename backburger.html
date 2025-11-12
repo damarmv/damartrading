@@ -1,125 +1,152 @@
-<!DOCTYPE html>
+<!-- BackBurger Email Template - accent color #9d9d9d -->
+<!doctype html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Penawaran Spesial dari BackBurger</title>
-    <style>
-        body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
-        img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
-        a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
-        /* Style untuk Tombol CTA */
-        .button {
-            background-color: #9d9d9d; /* Warna dari template yang diminta */
-            border: 1px solid #7a7a7a;
-            color: #ffffff !important;
-            padding: 12px 24px;
-            text-decoration: none;
-            display: inline-block;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        /* Style untuk Header atau Judul */
-        .header-title {
-            color: #333333;
-            font-size: 24px;
-            font-weight: bold;
-            line-height: 30px;
-        }
-        /* Style untuk Teks Konten Utama */
-        .content-text {
-            color: #333333;
-            font-size: 16px;
-            line-height: 24px;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BackBurger - Promo & Menu Baru</title>
+  <style>
+    /* Basic reset for email clients */
+    body { margin:0; padding:0; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; background-color:#f6f6f6; }
+    table { border-spacing:0; }
+    img { border:0; display:block; line-height:100%; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; }
+    a { text-decoration:none; }
+    .ExternalClass { width:100%; }
+    .ReadMsgBody { width:100%; }
+    /* Responsive */
+    @media only screen and (max-width:600px){
+      .container { width:100% !important; }
+      .stack { display:block !important; width:100% !important; }
+      .hero-img { width:100% !important; height:auto !important; }
+      .padding-sm { padding:12px !important; }
+      .h1 { font-size:22px !important; line-height:28px !important; }
+    }
+  </style>
 </head>
-<body style="margin: 0; padding: 0; background-color: #f4f4f4;">
+<body style="background-color:#f6f6f6; margin:0; padding:20px 0; font-family: 'Helvetica Neue', Arial, sans-serif;">
 
-    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
-        <tr>
-            <td align="center" style="padding: 20px 10px 40px 10px;">
-                <table border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; max-width: 600px; background-color: #ffffff;">
+  <!-- Outer wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+    <tr>
+      <td align="center">
 
-                    <tr>
-                        <td align="center" style="padding: 40px 0 0 0; background-color: #9d9d9d;">
-                            <h1 style="color: #ffffff; font-family: Arial, sans-serif; font-size: 32px; margin: 0;">BackBurger</h1>
-                        </td>
-                    </tr>
+        <!-- Centered container -->
+        <table class="container" width="600" cellpadding="0" cellspacing="0" role="presentation" style="width:600px; background-color:#ffffff; border-radius:8px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+          <!-- Header -->
+          <tr>
+            <td style="padding:20px 24px; background-color:#ffffff; text-align:left;">
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                <tr>
+                  <td style="vertical-align:middle;">
+                    <!-- Logo -->
+                    <img src="{{LOGO_URL}}" alt="BackBurger - The one you'll always come back for" width="150" style="display:block;">
+                  </td>
+                  <td style="text-align:right; vertical-align:middle; font-size:12px; color:#777777;">
+                    <span style="color:#9d9d9d; font-weight:600;">BackBurger</span><br>
+                    <span style="color:#999999;">Healthy Burgers • Cozy Vibes</span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-                    <tr>
-                        <td bgcolor="#ffffff" align="center" style="padding: 40px 30px 40px 30px; border-bottom: 3px solid #9d9d9d;">
-                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                <tr>
-                                    <td align="left" style="font-family: Arial, sans-serif;">
-                                        <p class="content-text">Halo Pecinta Burger Sehat,</p>
+          <!-- Hero image -->
+          <tr>
+            <td style="padding:0;">
+              <img class="hero-img" src="https://via.placeholder.com/1200x600?text=Low+Soy+Key+Burger" alt="Low Soy Key Burger" width="600" style="width:100%; height:auto; display:block;">
+            </td>
+          </tr>
 
-                                        <p class="content-text">Kami harap Anda dalam keadaan sehat dan bersemangat!</p>
+          <!-- Body content -->
+          <tr>
+            <td style="padding:24px;" class="padding-sm">
+              <h1 class="h1" style="margin:0 0 12px 0; font-size:26px; line-height:32px; color:#333333; font-weight:700;">
+                Coba Low Soy Key Burger — Menu Baru yang Sehat & Lezat
+              </h1>
 
-                                        <p class="content-text">Sebagai wujud apresiasi atas dukungan Anda yang berkelanjutan, kami ingin menjadi yang pertama berbagi penawaran eksklusif dan kabar terbaru dari BackBurger.</p>
-                                    </td>
-                                </tr>
+              <p style="margin:0 0 16px 0; color:#555555; font-size:15px; line-height:22px;">
+                Hai <strong>[Nama Pelanggan]</strong>,<br>
+                Kami sangat senang memperkenalkan <strong>Low Soy Key Burger</strong>: patty kacang kedelai yang kaya protein, saus alpukat creamy, sayuran segar, dan roti gandum yang sehat — sempurna untuk pilihan makan yang lebih baik tanpa mengorbankan rasa.
+              </p>
 
-                                <tr>
-                                    <td align="left" style="padding: 30px 0 15px 0; font-family: Arial, sans-serif;">
-                                        <h2 class="header-title" style="font-size: 20px;">Spesial untuk Anda: Diskon Loyalitas 20%!</h2>
-                                        <p class="content-text">Nikmati diskon spesial **20% untuk seluruh pesanan Anda**—baik saat makan di tempat maupun pemesanan *online*. Penawaran ini adalah ucapan terima kasih kami karena telah menjadi bagian dari keluarga BackBurger. Diskon berlaku sepanjang bulan ini, khusus bagi pelanggan setia seperti Anda.</p>
-                                    </td>
-                                </tr>
+              <!-- Promo box -->
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin:16px 0; border-radius:6px; background-color:#f2f2f2; border:1px solid #e6e6e6;">
+                <tr>
+                  <td style="padding:14px; text-align:center;">
+                    <p style="margin:0; font-size:18px; color:#333333; font-weight:700;">
+                      🎉 Diskon 20% untuk Pelanggan Setia
+                    </p>
+                    <p style="margin:6px 0 0 0; color:#666666; font-size:14px;">
+                      Berlaku sampai <strong>15 November 2025</strong>. Gunakan kode: <strong>BACK20</strong>
+                    </p>
+                  </td>
+                </tr>
+              </table>
 
-                                <tr>
-                                    <td align="left" style="padding: 15px 0 15px 0; font-family: Arial, sans-serif;">
-                                        <h2 class="header-title" style="font-size: 20px;">Menu Musiman Baru: The Mediterranean Sunset Burger</h2>
-                                        <p class="content-text">Patty kacang kedelai kami yang populer kini hadir dengan sentuhan rasa Mediterania! Kami perkenalkan **The Mediterranean Sunset Burger**, burger musiman yang menampilkan *patty* kedelai beraroma rempah, ditemani saus alpukat *tzatziki* yang *creamy* dan keju *feta* rendah lemak. Perpaduan rasa yang unik, segar, dan pastinya sehat. Menu ini hanya tersedia untuk waktu terbatas!</p>
-                                    </td>
-                                </tr>
+              <!-- CTA buttons -->
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin:18px 0;">
+                <tr>
+                  <td align="center">
+                    <!-- Primary CTA -->
+                    <a href="{{RESERVASI_URL}}" style="display:inline-block; padding:12px 22px; border-radius:6px; background-color:#9d9d9d; color:#ffffff; font-weight:700; font-size:15px; text-decoration:none; margin-right:10px;">
+                      Reservasi Meja Sekarang
+                    </a>
+                    <!-- Secondary CTA -->
+                    <a href="{{ORDER_URL}}" style="display:inline-block; padding:12px 22px; border-radius:6px; background-color:#ffffff; color:#9d9d9d; border:2px solid #9d9d9d; font-weight:700; font-size:15px; text-decoration:none;">
+                      Pesan Online
+                    </a>
+                  </td>
+                </tr>
+              </table>
 
-                                <tr>
-                                    <td align="left" style="padding: 15px 0 30px 0; font-family: Arial, sans-serif;">
-                                        <h2 class="header-title" style="font-size: 20px;">Event: Acoustic & Avocado Night</h2>
-                                        <p class="content-text">Yuk, habiskan malam Anda dengan santai bersama kami! BackBurger menyelenggarakan **Acoustic & Avocado Night** setiap hari Sabtu malam mulai pukul 19:30. Nikmati *live music* akustik yang menenangkan sambil menyantap burger sehat Anda, ditemani *side dish* berbahan dasar alpukat segar.</p>
-                                    </td>
-                                </tr>
+              <!-- Event section -->
+              <hr style="border:none; border-top:1px solid #eeeeee; margin:18px 0;">
+              <h2 style="margin:0 0 8px 0; font-size:18px; color:#333333;">Event: Live Music Night</h2>
+              <p style="margin:0 0 12px 0; color:#666666; font-size:14px; line-height:20px;">
+                Nikmati suasana santai setiap <strong>Jumat, 19.00</strong> dengan penampilan akustik lokal. Sempurna untuk menikmati burger dan minuman bersama teman.
+              </p>
 
-                                <tr>
-                                    <td align="center" style="padding: 20px 0 20px 0;">
-                                        <p style="font-family: Arial, sans-serif; font-size: 18px; color: #333333; font-weight: bold; margin: 0;">Pesan Sekarang dan Nikmati Eksklusifnya!</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td align="center" style="padding: 0 0 40px 0;">
-                                        <a href="*link_pemesanan_atau_reservasi*" target="_blank" class="button" style="font-family: Arial, sans-serif; background-color: #9d9d9d; border: 1px solid #7a7a7a; color: #ffffff !important; padding: 12px 24px; text-decoration: none; display: inline-block; border-radius: 5px; font-weight: bold;">
-                                            PESAN SEKARANG / RESERVASI MEJA
-                                        </a>
-                                    </td>
-                                </tr>
+              <!-- Small info row -->
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin-top:8px;">
+                <tr>
+                  <td style="vertical-align:top; width:48px;">
+                    <img src="https://via.placeholder.com/48/9d9d9d/ffffff?text=📍" alt="Lokasi" width="48" style="border-radius:6px;">
+                  </td>
+                  <td style="padding-left:12px; color:#666666; font-size:14px;">
+                    Jalan Contoh No.1, Kota — buka setiap hari 10:00–22:00
+                  </td>
+                </tr>
+              </table>
 
-                                <tr>
-                                    <td align="left" style="padding: 0 0 20px 0; font-family: Arial, sans-serif;">
-                                        <p class="content-text">Sampai jumpa di BackBurger!</p>
-                                        <p class="content-text" style="margin-top: 20px;">Salam Hangat,<br>Damar</p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
+            </td>
+          </tr>
 
-                    <tr>
-                        <td bgcolor="#333333" align="center" style="padding: 20px 30px 20px 30px;">
-                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                <tr>
-                                    <td align="center" style="font-family: Arial, sans-serif; font-size: 12px; color: #cccccc;">
-                                        <p style="margin: 0;">BackBurger | Burger Sehat, Hidup Nikmat</p>
-                                        <p style="margin: 0;"><a href="*link_unsubscribe*" target="_blank" style="color: #9d9d9d; text-decoration: none;">Unsubscribe</a></p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-                </td>
-        </tr>
-    </table>
-    </body>
+          <!-- Footer -->
+          <tr>
+            <td style="padding:18px 24px; background-color:#fafafa; text-align:center; color:#777777; font-size:13px;">
+              <p style="margin:0 0 8px 0;">
+                Follow kami di:
+              </p>
+              <p style="margin:0 0 10px 0;">
+                <a href="#" style="color:#9d9d9d; text-decoration:none; font-weight:600;">Instagram</a> &nbsp;|&nbsp;
+                <a href="#" style="color:#9d9d9d; text-decoration:none; font-weight:600;">Facebook</a>
+              </p>
+
+              <p style="margin:0 0 6px 0; color:#aaaaaa;">
+                Jika kamu tidak ingin menerima email promosi lagi, <a href="#" style="color:#9d9d9d; text-decoration:underline;">unsubscribe</a>.
+              </p>
+
+              <p style="margin:8px 0 0 0; color:#bbbbbb; font-size:12px;">
+                © <strong>BackBurger</strong> — The one you'll always come back for.
+              </p>
+            </td>
+          </tr>
+
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
 </html>
