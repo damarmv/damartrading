@@ -42,6 +42,46 @@ main {
     border-radius: 8px;
 }
 
+.menu-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-section h2 {
+    margin-bottom: 20px;
+    color: #b71c1c;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 250px;
+}
+
+.menu-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    color: #b71c1c;
+    margin-top: 10px;
+}
+
+.menu-item .harga {
+    font-weight: bold;
+    color: #d32f2f;
+}
+
 .form-section {
     padding: 20px;
 }
