@@ -20,28 +20,28 @@
 
   <main>
     <section class="form-section">
-       <div id="success-message-reservation" class="success-message">
+      <div id="success-message-reservasi" class="success-message">
         <div class="success-content">
           <span class="checkmark">&#10003;</span>
           <h2>Reservasi Berhasil!</h2>
-          <p>Terima kasih! Meja Anda telah kami siapkan. Kami tidak sabar menyambut kedatangan Anda di BackBurger untuk menikmati momen yang menyenangkan.</p>
+          <p>Terima kasih telah melakukan reservasi di BackBurger. Meja Anda telah kami siapkan. Kami tunggu kedatangannya!</p>
         </div>
       </div>
-      <form id="reservation-form" action="#" method="post">
+      <form id="reservasi-form" action="#" method="post">
         <h2>Formulir Reservasi Meja</h2>
-        <label for="nama">Nama Lengkap:</label>
-        <input type="text" id="nama" name="nama" required>
+        <label for="nama-reservasi">Nama Lengkap:</label>
+        <input type="text" id="nama-reservasi" name="nama" required>
 
-        <label for="telepon">Nomor Telepon:</label>
-        <input type="tel" id="telepon" name="telepon" required>
+        <label for="telepon-reservasi">Nomor Telepon:</label>
+        <input type="tel" id="telepon-reservasi" name="telepon" required>
 
-        <label for="jumlah_orang">Jumlah Orang:</label>
-        <input type="number" id="jumlah_orang" name="jumlah_orang" min="1" required>
+        <label for="jumlah-orang">Jumlah Orang:</label>
+        <input type="number" id="jumlah-orang" name="jumlah-orang" min="1" required>
 
-        <label for="tanggal">Tanggal Reservasi:</label>
+        <label for="tanggal">Tanggal Kedatangan:</label>
         <input type="date" id="tanggal" name="tanggal" required>
 
-        <label for="waktu">Waktu Reservasi:</label>
+        <label for="waktu">Waktu Kedatangan:</label>
         <input type="time" id="waktu" name="waktu" required>
 
         <button type="submit" class="btn-submit">Kirim Reservasi</button>
@@ -58,11 +58,12 @@
   </footer>
 
   <script>
-    document.getElementById('reservation-form').addEventListener('submit', function(event) {
-      event.preventDefault();
-      document.getElementById('success-message-reservation').style.display = 'flex';
+    document.getElementById('reservasi-form').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+      document.getElementById('success-message-reservasi').style.display = 'flex';
       event.target.style.display = 'none';
     });
   </script>
+
 </body>
 </html>
