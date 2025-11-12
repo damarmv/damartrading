@@ -8,7 +8,7 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #f3f3f3;
+      background-color: #121212;
       font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
       color: #333;
     }
@@ -18,25 +18,25 @@
 
     .container {
       max-width: 600px;
-      margin: 30px auto;
+      margin: 40px auto;
       background-color: #ffffff;
       border-radius: 16px;
       overflow: hidden;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
     }
 
     /* HEADER */
     .header {
-      background: linear-gradient(135deg, #9d9d9d 0%, #bcbcbc 100%);
+      background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
       text-align: center;
-      padding: 28px 24px;
+      padding: 32px 24px;
     }
     .header img {
       width: 150px;
       margin-bottom: 12px;
     }
     .header h1 {
-      color: #fff;
+      color: #f7c948;
       font-size: 22px;
       margin: 0;
       font-weight: 600;
@@ -45,98 +45,108 @@
 
     /* HERO */
     .hero {
-      background: linear-gradient(120deg, #9d9d9d 0%, #ffb347 100%);
-      color: #ffffff;
+      background: url('https://images.unsplash.com/photo-1516455207990-7a41ce80f7ee?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      color: #fff;
       text-align: center;
-      padding: 60px 24px;
+      padding: 90px 24px;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.55);
     }
     .hero h2 {
-      margin: 0;
-      font-size: 30px;
+      position: relative;
+      font-size: 32px;
       font-weight: 700;
+      margin: 0;
       line-height: 1.3;
     }
     .hero p {
+      position: relative;
       font-size: 17px;
-      margin-top: 12px;
-      color: #fffbe9;
+      margin-top: 14px;
+      color: #f2f2f2;
     }
 
     /* CONTENT */
     .content {
-      padding: 36px 28px;
-      text-align: left;
+      padding: 40px 30px;
       background-color: #ffffff;
+      color: #333;
     }
     .content h3 {
       font-size: 20px;
-      color: #444;
+      color: #111;
       margin-bottom: 14px;
       font-weight: 600;
     }
     .content p {
-      color: #555;
+      color: #444;
       font-size: 15px;
       line-height: 1.6;
       margin-bottom: 18px;
     }
-
     .highlight-box {
-      background-color: #fff9ef;
-      border-left: 5px solid #ffb347;
-      padding: 16px 18px;
+      background: #fff9e6;
+      border-left: 5px solid #f7c948;
+      padding: 16px 20px;
       border-radius: 8px;
-      margin: 22px 0;
+      margin: 24px 0;
     }
     .highlight-box p {
       margin: 0;
       font-size: 15px;
-      color: #444;
+      color: #333;
+      font-weight: 500;
     }
 
     /* CTA BUTTONS */
     .cta {
       text-align: center;
-      margin: 32px 0 12px 0;
+      margin: 36px 0 12px 0;
     }
     .btn-primary {
-      background-color: #9d9d9d;
-      color: #ffffff;
-      padding: 14px 26px;
+      background-color: #f7c948;
+      color: #111;
+      padding: 14px 28px;
       border-radius: 8px;
       font-weight: 600;
       font-size: 15px;
       display: inline-block;
-      margin-right: 8px;
+      margin-right: 10px;
       transition: 0.3s;
     }
     .btn-primary:hover {
-      background-color: #7c7c7c;
+      background-color: #ffdb58;
     }
-    .btn-secondary {
-      background-color: #ffb347;
+    .btn-dark {
+      background-color: #111;
       color: #fff;
-      padding: 14px 26px;
+      padding: 14px 28px;
       border-radius: 8px;
       font-weight: 600;
       font-size: 15px;
       display: inline-block;
       transition: 0.3s;
     }
-    .btn-secondary:hover {
-      background-color: #ff9f1c;
+    .btn-dark:hover {
+      background-color: #222;
     }
 
     /* FOOTER */
     .footer {
-      background-color: #9d9d9d;
-      color: #fff;
+      background-color: #1a1a1a;
+      color: #bbb;
       text-align: center;
-      padding: 22px;
+      padding: 26px;
       font-size: 13px;
     }
     .footer a {
-      color: #fff;
+      color: #f7c948;
       font-weight: 600;
     }
     .footer p {
@@ -145,9 +155,10 @@
     }
 
     @media (max-width:600px) {
-      .hero h2 { font-size: 24px; }
+      .hero { padding: 70px 18px; }
+      .hero h2 { font-size: 26px; }
       .content { padding: 26px 18px; }
-      .btn-primary, .btn-secondary { display: block; margin: 8px auto; width: 80%; }
+      .btn-primary, .btn-dark { display: block; margin: 8px auto; width: 80%; }
     }
   </style>
 </head>
@@ -162,38 +173,39 @@
           <tr>
             <td class="header">
               <img src="assets/backburger.png" alt="BackBurger">
-              <h1>BackBurger — The one you’ll always come back for</h1>
+              <h1>BackBurger — Live Music Night</h1>
             </td>
           </tr>
 
           <!-- HERO -->
           <tr>
             <td class="hero">
-              <h2>🎶 Live Music Night<br> Setiap Jumat di BackBurger!</h2>
-              <p>Suasana hangat, musik akustik, dan cita rasa burger sehat terbaik — semua di satu tempat.</p>
+              <h2>🎵 Live Music & Burger Night</h2>
+              <p>Setiap Jumat, mulai pukul 19.00 — nikmati malam penuh musik, cita rasa, dan suasana hangat.</p>
             </td>
           </tr>
 
           <!-- CONTENT -->
           <tr>
             <td class="content">
-              <h3>Rasakan Malam Penuh Musik & Cita Rasa</h3>
+              <h3>✨ Nikmati Malam Spesial di BackBurger</h3>
               <p>
-                Setiap Jumat malam mulai pukul <strong>19.00 WIB</strong>, nikmati hidangan spesial kami sambil ditemani penampilan live band akustik lokal pilihan.
+                Lepaskan penat dengan suasana akustik yang menenangkan sambil menikmati burger sehat favoritmu.  
+                Kami hadirkan musisi lokal berbakat dan hidangan istimewa yang hanya tersedia saat acara berlangsung.
               </p>
 
               <div class="highlight-box">
-                <p>✨ Dapatkan <strong>1 minuman gratis</strong> untuk setiap pembelian burger selama acara berlangsung!</p>
+                <p>💛 Dapatkan <strong>minuman gratis</strong> untuk setiap pembelian burger selama acara!</p>
               </div>
 
               <p>
-                Ajak teman, pasangan, atau keluarga untuk bersantai menikmati suasana malam yang tak terlupakan di <strong>BackBurger</strong>.  
-                Tempat duduk terbatas, jadi pastikan kamu sudah reservasi!
+                Tempat duduk terbatas — jangan lewatkan malam paling ditunggu setiap minggu di BackBurger.  
+                Segera amankan tempatmu sekarang!
               </p>
 
               <div class="cta">
-                <a href="https://damartrading.web.id/backburger/reservasi" class="btn-secondary">Reservasi Sekarang</a>
-                <a href="https://damartrading.web.id/backburger/event" class="btn-primary">Lihat Jadwal Event</a>
+                <a href="https://damartrading.web.id/backburger/reservasi" class="btn-primary">Reservasi Sekarang</a>
+                <a href="https://damartrading.web.id/backburger/event" class="btn-dark">Lihat Jadwal Event</a>
               </div>
             </td>
           </tr>
