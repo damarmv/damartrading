@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pesan Online - BackBurger</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">BackBurger</a></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html#menu">Menu</a></li>
+        <li><a href="order.html">Pesan</a></li>
+        <li><a href="reservasi.html">Reservasi</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Formulir Pemesanan Online</h2>
+      <form action="#" method="post">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="telepon">Nomor Telepon:</label>
+        <input type="tel" id="telepon" name="telepon" required>
+
+        <label for="email">Alamat Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="pesanan">Pesanan Anda:</label>
+        <textarea id="pesanan" name="pesanan" rows="6" required></textarea>
+
+        <label for="kupon">Kode Kupon (jika ada):</label>
+        <input type="text" id="kupon" name="kupon">
+
+        <button type="submit" class="btn-submit">Kirim Pesanan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BackBurger. Semua hak dilindungi.</p>
+  </footer>
+</body>
+</html>
