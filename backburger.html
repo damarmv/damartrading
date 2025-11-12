@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>BackBurger - Christmas Celebration Night</title>
+  <title>BackBurger Christmas Celebration</title>
   <style>
     body {
       margin: 0;
@@ -27,20 +27,32 @@
 
     /* HEADER */
     .header {
-      background: linear-gradient(135deg, #b71c1c 0%, #d32f2f 100%);
+      background: linear-gradient(135deg, #8b0000 0%, #b71c1c 100%);
+      padding: 30px 24px;
       text-align: center;
-      padding: 32px 24px;
     }
-    .header img {
-      width: 150px;
-      margin-bottom: 10px;
+    .header-content {
+      display: inline-block;
+      text-align: left;
     }
-    .header h1 {
-      color: #fff8e1;
-      font-size: 22px;
-      margin: 0;
-      font-weight: 600;
+    .header-logo {
+      width: 70px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    .brand-name {
+      font-size: 26px;
+      font-weight: 700;
+      color: #fff;
       letter-spacing: 0.5px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .tagline {
+      font-size: 13px;
+      color: #ffefc3;
+      margin-top: 4px;
+      letter-spacing: 0.3px;
     }
 
     /* HERO */
@@ -139,7 +151,7 @@
 
     /* FOOTER */
     .footer {
-      background-color: #b71c1c;
+      background-color: #8b0000;
       color: #fff;
       text-align: center;
       padding: 26px;
@@ -159,6 +171,8 @@
       .hero h2 { font-size: 26px; }
       .content { padding: 26px 18px; }
       .btn-primary, .btn-gold { display: block; margin: 8px auto; width: 80%; }
+      .brand-name { font-size: 22px; display: block; text-align: center; }
+      .header-content { text-align: center; }
     }
   </style>
 </head>
@@ -172,8 +186,13 @@
           <!-- HEADER -->
           <tr>
             <td class="header">
-              <img src="assets/backburger.png" alt="BackBurger">
-              <h1>BackBurger Christmas Celebration</h1>
+              <div class="header-content">
+                <img src="assets/backburger.png" alt="BackBurger Logo" class="header-logo">
+                <div style="display:inline-block; vertical-align:middle;">
+                  <div class="brand-name">BackBurger</div>
+                  <div class="tagline">The one you’ll always come back for.</div>
+                </div>
+              </div>
             </td>
           </tr>
 
@@ -195,11 +214,11 @@
               </p>
 
               <div class="highlight-box">
-                <p>🎁 Menu spesial Natal — <strong>Christmas Joy Burger</strong> dan <strong>Spiced Avocado Delight</strong> tersedia hanya malam itu!</p>
+                <p>🎁 Menu spesial Natal — <strong>Christmas Joy Burger</strong> & <strong>Spiced Avocado Delight</strong> hanya malam itu!</p>
               </div>
 
               <p>
-                Nikmati juga <strong>live acoustic band</strong> dan <strong>hadiah kejutan</strong> untuk 20 pengunjung pertama yang reservasi.  
+                Nikmati <strong>live acoustic band</strong>, dekorasi Natal yang menawan, dan <strong>hadiah kejutan</strong> untuk 20 pengunjung pertama yang reservasi.  
                 Ajak orang tersayang dan jadikan malam Natal Anda berkesan di BackBurger.
               </p>
 
@@ -215,7 +234,7 @@
             <td class="footer">
               <p>📍 Jalan Contoh No.1, Kota | Buka setiap hari 10:00–22:00</p>
               <p>Ikuti kami di <a href="#">Instagram</a> & <a href="#">Facebook</a></p>
-              <p>© 2025 <strong>BackBurger</strong>. Merry Christmas & Happy Holidays 🎅</p>
+              <p>© 2025 <strong>BackBurger</strong> | Merry Christmas & Happy Holidays 🎅</p>
             </td>
           </tr>
 
