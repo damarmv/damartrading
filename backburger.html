@@ -16,10 +16,10 @@
     img { border: 0; display: block; }
 
     .container {
-      max-width: 600px;
-      margin: 40px auto;
+      width: 100% !important;
+      margin: 0 !important;
+      border-radius: 0 !important;
       background-color: #ffffff;
-      border-radius: 16px;
       overflow: hidden;
     }
 
@@ -28,14 +28,27 @@
       background: linear-gradient(135deg, #8b0000 0%, #b71c1c 100%);
       padding: 24px 28px;
     }
+    .header-logo-container {
+      display: block !important;
+      text-align: center !important;
+      width: 100% !important;
+      padding-right: 0 !important;
+      padding-bottom: 15px !important;
+    }
     .header-logo {
       width: 70px;
       height: 70px;
       border-radius: 50%;
       object-fit: cover;
+      margin: 0 auto;
+    }
+    .brand-block-container {
+      display: block !important;
+      text-align: center !important;
+      width: 100% !important;
     }
     .brand-name {
-      font-size: 26px;
+      font-size: 24px !important;
       font-weight: 700;
       color: #fff;
       letter-spacing: 0.5px;
@@ -51,7 +64,7 @@
 
     /* CONTENT */
     .content {
-      padding: 40px 30px;
+      padding: 26px 18px;
       color: #000000;
       background-color: #ffffff;
     }
@@ -86,16 +99,19 @@
       text-align: center;
       margin: 36px 0 12px 0;
     }
-    .btn-primary {
-      background-color: #d32f2f;
-      color: #fff;
+    .btn-primary, .btn-gold {
+      display: block;
+      margin: 8px auto;
+      width: 80%;
       padding: 14px 28px;
       border-radius: 8px;
       font-weight: 600;
       font-size: 15px;
-      display: inline-block;
-      margin-right: 10px;
       transition: 0.3s;
+    }
+    .btn-primary {
+      background-color: #d32f2f;
+      color: #fff;
     }
     .btn-primary:hover {
       background-color: #b71c1c;
@@ -103,12 +119,6 @@
     .btn-gold {
       background-color: #f7c948;
       color: #111;
-      padding: 14px 28px;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 15px;
-      display: inline-block;
-      transition: 0.3s;
     }
     .btn-gold:hover {
       background-color: #ffdc73;
@@ -130,30 +140,6 @@
       margin: 6px 0;
       line-height: 1.4;
     }
-
-    /* RESPONSIVE */
-    @media (max-width:600px) {
-      .container { 
-        width: 100% !important; 
-        margin: 0 !important; 
-        border-radius: 0 !important; 
-      }
-      .content { padding: 26px 18px; }
-      .btn-primary, .btn-gold { display: block; margin: 8px auto; width: 80%; }
-      .header-logo-container { 
-        display: block !important; 
-        text-align: center !important; 
-        width: 100% !important; 
-        padding-right: 0 !important; 
-        padding-bottom: 15px !important; 
-      }
-      .brand-block-container { 
-        display: block !important; 
-        text-align: center !important; 
-        width: 100% !important; 
-      }
-      .brand-name { font-size: 24px !important; }
-    }
   </style>
 </head>
 <body>
@@ -168,10 +154,12 @@
             <td class="header">
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
                 <tr>
-                  <td class="header-logo-container" style="padding-right: 16px;" valign="middle" width="86">
+                  <td class="header-logo-container">
                     <img src="assets/backburger.png" alt="BackBurger Logo" class="header-logo">
                   </td>
-                  <td class="brand-block-container" valign="middle">
+                </tr>
+                <tr>
+                  <td class="brand-block-container">
                     <h1 class="brand-name">BackBurger</h1>
                     <div class="tagline">The one you’ll always come back for.</div>
                   </td>
