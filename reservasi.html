@@ -20,8 +20,15 @@
 
   <main>
     <section class="form-section">
-      <h2>Formulir Reservasi Meja</h2>
-      <form action="#" method="post">
+       <div id="success-message-reservation" class="success-message">
+        <div class="success-content">
+          <span class="checkmark">&#10003;</span>
+          <h2>Reservasi Berhasil!</h2>
+          <p>Terima kasih! Meja Anda telah kami siapkan. Kami tidak sabar menyambut kedatangan Anda di BackBurger untuk menikmati momen yang menyenangkan.</p>
+        </div>
+      </div>
+      <form id="reservation-form" action="#" method="post">
+        <h2>Formulir Reservasi Meja</h2>
         <label for="nama">Nama Lengkap:</label>
         <input type="text" id="nama" name="nama" required>
 
@@ -45,5 +52,13 @@
   <footer>
     <p>&copy; 2025 BackBurger. Semua hak dilindungi.</p>
   </footer>
+
+  <script>
+    document.getElementById('reservation-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      document.getElementById('success-message-reservation').style.display = 'flex';
+      event.target.style.display = 'none';
+    });
+  </script>
 </body>
 </html>

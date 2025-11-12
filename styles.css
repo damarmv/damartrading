@@ -91,6 +91,36 @@ textarea {
     background-color: #b71c1c;
 }
 
+.success-message {
+    display: none;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-content h2 {
+    color: #b71c1c;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.success-content p {
+    color: #333;
+    font-size: 16px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.checkmark {
+    color: #28a745;
+    font-size: 48px;
+    display: block;
+    margin-bottom: 15px;
+}
+
 footer {
     text-align: center;
     padding: 20px;

@@ -20,8 +20,15 @@
 
   <main>
     <section class="form-section">
-      <h2>Formulir Pemesanan Online</h2>
-      <form action="#" method="post">
+      <div id="success-message-order" class="success-message">
+        <div class="success-content">
+          <span class="checkmark">&#10003;</span>
+          <h2>Pesanan Diterima!</h2>
+          <p>Terima kasih telah memesan di BackBurger! Kami sedang menyiapkan pesanan Anda dengan bahan-bahan segar pilihan. Burger lezat akan segera tiba.</p>
+        </div>
+      </div>
+      <form id="order-form" action="#" method="post">
+        <h2>Formulir Pemesanan Online</h2>
         <label for="nama">Nama Lengkap:</label>
         <input type="text" id="nama" name="nama" required>
 
@@ -45,5 +52,13 @@
   <footer>
     <p>&copy; 2025 BackBurger. Semua hak dilindungi.</p>
   </footer>
+
+  <script>
+    document.getElementById('order-form').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+      document.getElementById('success-message-order').style.display = 'flex';
+      event.target.style.display = 'none';
+    });
+  </script>
 </body>
 </html>
